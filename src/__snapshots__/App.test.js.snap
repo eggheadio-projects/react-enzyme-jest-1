@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 // logo.svg swapped out for https://rawgit.com/eggheadio-projects/react-enzyme-jest/9e8a3ec0e0ad1929dc74ff4ba8648d82510d7183/src/logo.svg
-// to run in embed
+// to run in embed, get fresh snapshot if running locally.
 
 exports[`<App /> mount rendering matches the snapshot 1`] = `
 <App>
