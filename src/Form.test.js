@@ -47,6 +47,7 @@ describe('<Form />', () => {
         expect(api.addUser).toHaveBeenCalledWith('Tyler', 'test@gmail.com', '8018882321')
     })
     // matches snapshot
+    // run locally to see test pass
     test('matches saved snapshot', () => {
         const wrapper = shallow(<Form />)
         expect(toJson(wrapper)).toMatchSnapshot()

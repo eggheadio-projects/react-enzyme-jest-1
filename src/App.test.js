@@ -12,6 +12,7 @@ describe('<App /> shallow rendering', () => {
     const wrapper = shallow(<App />)
     expect(wrapper.find('h1').text()).toBe('Welcome to React')
   })
+  // run locally to see test pass
   it('matches the snapshot', () => {
     const tree = shallow(<App />)
     expect(toJson(tree)).toMatchSnapshot()
@@ -66,6 +67,7 @@ describe('<App /> mount rendering', () => {
     expect(wrapper.find('h1').text()).toBe('Welcome to React')
     wrapper.unmount()
   })
+  // run locally to see test pass
   it('matches the snapshot', () => {
     const tree = mount(<App />)
     expect(toJson(tree)).toMatchSnapshot()
