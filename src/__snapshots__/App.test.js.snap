@@ -1,4 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
+// logo.svg swapped out for https://rawgit.com/eggheadio-projects/react-enzyme-jest/9e8a3ec0e0ad1929dc74ff4ba8648d82510d7183/src/logo.svg
+// to run in embed
 
 exports[`<App /> mount rendering matches the snapshot 1`] = `
 <App>
@@ -11,7 +13,7 @@ exports[`<App /> mount rendering matches the snapshot 1`] = `
       <img
         alt="logo"
         className="App-logo"
-        src="logo.svg"
+        src="https://rawgit.com/eggheadio-projects/react-enzyme-jest/9e8a3ec0e0ad1929dc74ff4ba8648d82510d7183/src/logo.svg"
       />
       <h1
         className="App-title"
@@ -116,7 +118,7 @@ exports[`<App /> shallow rendering matches the snapshot 1`] = `
     <img
       alt="logo"
       className="App-logo"
-      src="logo.svg"
+      src="https://rawgit.com/eggheadio-projects/react-enzyme-jest/9e8a3ec0e0ad1929dc74ff4ba8648d82510d7183/src/logo.svg"
     />
     <h1
       className="App-title"
