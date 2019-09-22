@@ -3,28 +3,28 @@ import React, { Component } from 'react';
 // import './App.css';
 // removed <img src={logo} className="App-logo" alt="logo" /> from line 10
 
-const Title = ({text}) => <div>{text}</div>
+class App extends Component {
+  state = {
+    on: false,
+    input: ''
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to React</h1>
+  render() {
+    return(
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
         <p className="App-intro">
-          Edit <code>src/App.js</code> and save to reload.
+          To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-         <Title text="Some title" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        <p className='button-state'>{this.state.on ? 'Yes!' : 'No!'}</p>
+        <button onClick={() => this.setState({on: true})}>Click</button>
+        <h2>{this.state.input}</h2>
+        <input onChange={(e) => this.setState({input: e.currentTarget.value})} type='text' />
+      </div>
+    );
+  }
 }
 
 export class Link extends Component {

@@ -8,34 +8,36 @@ exports[`<App /> mount rendering matches the snapshot 1`] = `
     <header
       className="App-header"
     >
-      <h1>
+      <h1
+        className="App-title"
+      >
         Welcome to React
       </h1>
-      <p
-        className="App-intro"
-      >
-        Edit 
-        <code>
-          src/App.js
-        </code>
-         and save to reload.
-      </p>
-      <Title
-        text="Some title"
-      >
-        <div>
-          Some title
-        </div>
-      </Title>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Learn React
-      </a>
     </header>
+    <p
+      className="App-intro"
+    >
+      To get started, edit 
+      <code>
+        src/App.js
+      </code>
+       and save to reload.
+    </p>
+    <p
+      className="button-state"
+    >
+      No!
+    </p>
+    <button
+      onClick={[Function]}
+    >
+      Click
+    </button>
+    <h2 />
+    <input
+      onChange={[Function]}
+      type="text"
+    />
   </div>
 </App>
 `;
@@ -47,29 +49,35 @@ exports[`<App /> shallow rendering matches the snapshot 1`] = `
   <header
     className="App-header"
   >
-    <h1>
+    <h1
+      className="App-title"
+    >
       Welcome to React
     </h1>
-    <p
-      className="App-intro"
-    >
-      Edit 
-      <code>
-        src/App.js
-      </code>
-       and save to reload.
-    </p>
-    <Title
-      text="Some title"
-    />
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Learn React
-    </a>
   </header>
+  <p
+    className="App-intro"
+  >
+    To get started, edit 
+    <code>
+      src/App.js
+    </code>
+     and save to reload.
+  </p>
+  <p
+    className="button-state"
+  >
+    No!
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Click
+  </button>
+  <h2 />
+  <input
+    onChange={[Function]}
+    type="text"
+  />
 </div>
 `;
