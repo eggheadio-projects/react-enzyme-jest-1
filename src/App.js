@@ -6,14 +6,15 @@ import React, { Component } from 'react';
 class App extends Component {
   state = {
     on: false,
-    input: ''
+    input: '',
+    mainColor: 'blue'
   }
-
   render() {
     return(
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
+          <h3 className={this.state.mainColor}>Everyone is Welcome!</h3>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
