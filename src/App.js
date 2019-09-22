@@ -3,7 +3,7 @@ import React from 'react';
 // import './App.css';
 // removed <img src={logo} className="App-logo" alt="logo" /> from line 10
 
-const Test = () => <div>Testing</div>
+const Title = ({text}) => <div>{text}</div>
 
 function App() {
   return (
@@ -13,11 +13,7 @@ function App() {
         <p className="App-intro">
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <ul className="tyler">
-          <li>Test 1</li>
-          <li>Test 2</li>
-          <li>Test 3</li>
-        </ul>
+         <Title text="Some title" />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -27,7 +23,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <Test />
     </div>
   );
 }

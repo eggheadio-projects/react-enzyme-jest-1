@@ -9,6 +9,6 @@ configure({ adapter: new Adapter() })
 describe('<App />', () => {
   const wrapper = shallow(<App />)
   it('should contain 1 p element', () => {
-    expect(wrapper.find('h1').text()).toBe("Welcome to React")
+    expect(wrapper.find('[text="Some title"]').exists()).toBe(true)
   })
 })
