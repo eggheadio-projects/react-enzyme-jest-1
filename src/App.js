@@ -9,10 +9,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-        <p>
+        <h1>Welcome to React</h1>
+        <p className="App-intro">
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <ul className="tyler">
+          <li>Test 1</li>
+          <li>Test 2</li>
+          <li>Test 3</li>
+        </ul>
         <a
           className="App-link"
           href="https://reactjs.org"
