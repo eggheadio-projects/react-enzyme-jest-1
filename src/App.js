@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 // removed <img src={logo} className="App-logo" alt="logo" /> from line 10
@@ -25,6 +25,12 @@ function App() {
       </header>
     </div>
   );
+}
+
+export class Link extends Component {
+  render() {
+    return this.props.hide ? null : <a href={this.props.address}>Click</a>
+  }
 }
 
 export default App;
