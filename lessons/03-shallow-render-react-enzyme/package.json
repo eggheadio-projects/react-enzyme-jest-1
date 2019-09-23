@@ -1,6 +1,6 @@
 {
-  "name": "react-enzyme-jest",
-  "version": "0.1.0",
+  "name": "03-shallow-render-react-enzyme",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "react": "^16.9.0",

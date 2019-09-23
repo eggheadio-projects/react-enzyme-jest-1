@@ -1,6 +1,6 @@
 {
-  "name": "react-enzyme-jest",
-  "version": "0.1.0",
+  "name": "09-simulated-event-handlers",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "jsdom": "^15.1.1",
