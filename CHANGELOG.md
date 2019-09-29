@@ -24,6 +24,6 @@ All notable changes to Test React Components with Enzyme and Jest will be docume
 ### Removed
 - Removed "import logo from './logo.svg'" from App.js
 - Removed "import './App.css'" from App.js
-- Removed "<img src={logo} className="App-logo" alt="logo" />" from App.js
+- Removed "img src={logo} className="App-logo" alt="logo"" from App.js
 - Removed "import './Form.css'" from Form.js
 - Removed "import './TodoList.css'" from TodoList.js
