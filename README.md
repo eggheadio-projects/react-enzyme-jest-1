@@ -10,3 +10,14 @@ This project is using yarn workspaces. Each lesson is a folder inside of `lesson
 To get started run `yarn` in the root of the project.
 
 Navigate to each lesson folder and run `yarn test` to run that lesson's test suite
+
+## Reviewer Notes
+When running tests, console would print:
+'console.error node_modules/react-dom/cjs/react-dom-test-utils.production.min.js:22
+act(...) is not supported in production builds of React, and might not behave as expected.
+But tests were still able to run appropriately.'
+As it says, tests were still able to run appropriately.
+
+Jest would throw Unexpected Token on importing CSS files. Commenting out those imports and references to those imports solved the problems.
+
+Had to change 'env' to '@babel/preset-env' and 'react' to '@babel/react' in .babelrc in order for tests to run properly.
